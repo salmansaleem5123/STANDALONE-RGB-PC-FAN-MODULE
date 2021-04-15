@@ -1,1 +1,128 @@
 # STANDALONE-RGB-PC-FAN-MODULE
+This project was created upon experiencing thermal throttling on my laptop and found usb cooling pads as not effective,
+and those which were effective were highly priced.
+So opted to use a good rgb PC fan instead, with a custom power supply for it so it can work as a standalone fan.
+
+Please check the pin numbers and pins for their connections of your fan before proceeding
+
+Please take safety precautions before working on live wires and also beware of the hot soldering iron.
+
+
+ITEMS REQUIRED:
+------------------------------------------------------------
+RGB PC FAN -1
+
+DC TO DC BOOST CONVERTER - 1
+
+USB WIRE AND MOBILE CHARGER ADAPTER - 1
+
+WIRES
+
+MULTIMETER
+
+SOLDERING IRON AND SOLDER
+
+SPDT SWITCH - 1 (OPTIONAL)
+
+MOLEX CONNECTOR FEMALE - 1 (OPTIONAL)
+
+THEORY:
+------------------------------------------------------------
+RGB FAN HAS MAINLY 2 COMPONENTS, RGB AND THE FAN.
+
+RGB REQUIRES A 5V DC NPUT WHILE THE FAN REQUIRES 12V DC INPUT
+
+USUALLY RGB FANS COME WITH A MOLEX CONNECTOR WHICH HAS 4 PINS 
+
+PIN MARKED 1 IS USUALLY A 12V AND PIN MARKED 4 IS A 5V .PIN 2 AND 3 ARE GROUND.
+
+IN MY CASE ONLY PIN 2 WAS AVAILABLE AS COMMON GROUND SO I JOINED THE NEGATIVE WIRES OF 12V AND 5V TOGETHER AND CONNECTED TO PIN 2 
+
+CIRCUIT DIAGRAM:
+------------------------------------------------------------
+<img src="https://user-images.githubusercontent.com/75013435/114820764-26401800-9ddd-11eb-865f-d9b2567fd2d3.jpeg" width="90%"></img> 
+
+
+PROCEDURE:
+------------------------------------------------------------
+STEP 1:
+
+TAKE AN OLD USB-A CABLE AND CUT THE NON USB PART 
+
+REMOVE SHIELDING AND SEPARATE THE WIRES , KEEPING ONLY THE POWER WIRES WHICH ARE RED=POSITIVE AND BLACK= GROUND, CUT THE OTHER CABLES WHICH ARE DATA CABLES .
+
+NOW STRIP THE RED AND BLACK WIRES, CONNECT THEM TO THE MULTIMETER AND CONNECT THE USB TO POWER AND CHECK IF U GET 5V , IF YES THEN PROCEED.
+
+<img src="https://user-images.githubusercontent.com/75013435/114819962-e62c6580-9ddb-11eb-8ac3-b9797fb65e2b.jpeg" width="90%"></img> 
+
+STEP 2:
+
+TAKE 2 WIRES AND CONNECT THEM TO THE OUTPUT TERMINALS OF THE BOOST CONVERTER
+
+CONNECT THE USB WIRES TO THE INPUT TERMINALS OF THE BOOST CONVERTER
+
+CONNECT THE USB TO THE POWER
+
+
+CONNECT THE MULTIMETER TO THE OUTPUT WIRES AND MEASURE THE OUTPUT VOLTAGE
+
+USING THE SCREW ON THE POTENTIOMETER SET THE VOLTAGE TO 12V.
+
+<img src="https://user-images.githubusercontent.com/75013435/114820163-35729600-9ddc-11eb-9f70-3c31b20b4d2f.jpeg" width="90%"></img> 
+<img src="https://user-images.githubusercontent.com/75013435/114820301-6a7ee880-9ddc-11eb-9a48-f71e4a71f7d8.jpeg" width="90%"></img> 
+
+STEP 3:
+
+TAKE 2 WIRES AND CONNECT THEM TO THE INPUT 5V TERMINALS OF BOOST CONVERTER .
+
+SOLDER ALL THE WIRES ON THE BOOST CONVERTER.
+
+(OPTIONAL) CUT THE POSITIVE 5V WIRE IN TWO PEICES CONNECT A SWITCH IN BETWEEN THEM .
+
+YOU SHOULD BE LEFT WITH 4 LOOSE WIRES 2 COMING FROM INPUT OF BOOST CONVERTER (5V)AND 2 COMING FROM OUTPUT OF BOOST CONVERTER(12V)
+
+STEP 4:
+
+(OPTIONAL) TAKE A MOLEX FEMALE CONNECTOR AND ATTACH
+
+ POSTIVE 12 V TO PIN 1 
+ 
+POSITIVE 5V TO PIN 4
+
+AND GROUNDS TO PIN 2 AND 3 OR JOIN THE THE TWO GROUND WIRES TOGETHER AND CONNECT TO EITHER 2 OR 3 PIN
+
+OR 
+
+JUST SOLDER THE WIRES TO THE MOLEX CONNECTER OF THE FAN
+
+  POSTIVE 12 V TO PIN 1 
+  
+  POSITIVE 5V TO PIN 4
+  
+  AND GROUNDS TO PIN 2 AND 3 OR JOIN THE THE TWO GROUND WIRES TOGETHER AND CONNECT TO EITHER 2 OR 3 PIN
+  
+  <img src="https://user-images.githubusercontent.com/75013435/114820483-ad40c080-9ddc-11eb-9c6d-707d2eb3c2cc.jpeg" width="90%"></img> 
+  <img src="https://user-images.githubusercontent.com/75013435/114820550-c8abcb80-9ddc-11eb-89c1-f1ba96bf6808.jpeg" width="90%"></img> 
+
+WE ARE ALL SET!!!
+
+GIVE THE USB POWER AND VERIFY, ALSO TEST THE OPTIONAL SWITCH WHICH TURNS OFF ONLY THE RGB AND LETS ONLY THE FAN WORK.
+
+END RESULT:
+------------------------------------------------------------
+NOW YOU HAVE A STANDALONE RGB PC FAN WHICH CAN BE POSITIONED HOWEVER YOU LIKE ACCORDING TO YOUR SETUP/LAPTOP, WHICH WORKS ON USB AND COOLS YOUR LAPTOP TREMENDOUSLY AND SAVES YOUR LAPTOP FROM THERMAL BOTTLENECK.
+
+I HAVE NOTICED LESS FPS DROPS IN GAMES BY USING JUST ONE FAN.
+
+<img src="https://user-images.githubusercontent.com/75013435/114820659-f3961f80-9ddc-11eb-866b-d7c19b311c24.jpeg" width="90%"></img> 
+
+THIS WHOLE PROJECT COST ME AROUND RS 600
+------------------------------------------------------------
+RGB FAN(ANT ESPORTS) - RS 500
+
+BOOST CONVERTER - RS 100 
+
+WIRES, USB CABLE- SALVAGED FROM OLD CABLES SO RS 0
+
+ENOJOY AND GOOD LUCK!!!
+------------------------------------------------------------
